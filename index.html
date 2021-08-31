@@ -1,0 +1,82 @@
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script src="script.js"></script>
+
+<body>
+
+
+    <div class="container">
+        <div class="center-horiz">
+            <h1>RSA ENCRYPTION DEMO</h1>
+        </div>
+
+        <div class="center">
+
+            <div class='card' style="background-color: rgb(68, 139, 231);">
+                <b>PERSON 2</b>
+                <br>
+                <hr>
+                <label for="myInput">Message:</label>
+                <input type="text" placeholder="Type something..." id="myInput">
+                <br>
+                <br>
+                <label for="p">Choose <i>p</i>:</label>
+                <select name="p" id="p">
+                    <option value="11">11</option>
+                    <option value="17">17</option>
+                    <option value="23">23</option>
+                </select>
+                <br>
+                <br>
+                <label for="q">Choose <i>q</i>:</label>
+                <select name="q" id="q">
+                    <option value="29">29</option>
+                    <option value="19">19</option>
+                    <option value="13">13</option>
+                </select>
+                <br>
+                <br>
+                <label for="e">Choose <i>e</i>:</label>
+                <select name="e" id="e">
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="11">11</option>
+                </select>
+                <br>
+                <br>
+                <button type="button" onclick="getInputValue();">Send</button>
+                <br>
+                <hr>
+                <br>
+                <label for="ascii">ASCII message:</label>
+                <input type="text" id="ascii">
+                <br>
+
+            </div>
+            <div class='card'>
+                <b>Information beeing sent:</b>
+                <hr>
+                <p id='infosent'></p>
+
+            </div>
+            <div class='card' style="background-color: rgb(95, 231, 68);">
+                <b>PERSON 2</b>
+                <br>
+                <hr>
+                <label for="response">Received message:</label>
+                <input type="text" id="response">
+                <br>
+                <p id="d"></p>
+                <br>
+                <label for="decrypted">Decrypted ASCII:</label>
+                <input type="text" id="decrypted">
+                <br>
+                <br>
+                <label for="decryptedString">Decrypted text:</label>
+                <input type="text" id="decryptedString">
+            </div>
+        </div>
+    </div>
+
+
+</body>
